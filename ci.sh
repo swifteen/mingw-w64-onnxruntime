@@ -17,7 +17,7 @@ pacman -U --noconfirm \
   mingw-w64-x86_64-mimalloc-2.0.3-1-any.pkg.tar.zst \
   mingw-w64-x86_64-mp11-1.77.0-1-any.pkg.tar.zst \
   mingw-w64-x86_64-onnx-1.10.2-1-any.pkg.tar.zst
-git clone https://github.com/microsoft/onnxruntime.git
+git clone -b v1.10.0 https://github.com/microsoft/onnxruntime.git
 cd onnxruntime
 git submodule update --init --recursive
 cmake \
