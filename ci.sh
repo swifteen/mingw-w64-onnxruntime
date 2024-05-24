@@ -20,6 +20,11 @@ pacman -U --noconfirm \
 git clone -b v1.10.0 https://github.com/microsoft/onnxruntime.git
 cd onnxruntime
 git submodule update --init --recursive
+
+cd cmake/external/onnx
+git checkout v1.10.2
+cd -
+
 cmake \
   -B build-shared \
   -DCMAKE_BUILD_TYPE=Release \
