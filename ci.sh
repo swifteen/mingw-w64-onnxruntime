@@ -27,6 +27,7 @@ cd -
 
 cmake \
   -B build-shared \
+   -DCMAKE_CXX_STANDARD=14 \
   -DCMAKE_BUILD_TYPE=Release \
   -DCMAKE_INSTALL_PREFIX=/mingw64 \
   -DProtobuf_USE_STATIC_LIBS=ON \
